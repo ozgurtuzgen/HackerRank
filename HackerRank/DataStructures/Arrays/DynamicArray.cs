@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HackerRank
+namespace HackerRank.DataStructures.Arrays
 {
     public static class DynamicArray
     {

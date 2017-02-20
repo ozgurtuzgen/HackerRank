@@ -9,7 +9,7 @@ class Solution
 
     static void Main(String[] args)
     {
-        HackerRank.ProjectEuler._2_EvenFibonacciNumbers.Calculate();
+        HackerRank._30DaysOfCode.Day08_DictionariesAndMaps.Calculate();
 
         Console.ReadLine();
         //--------------------------DAY3------------------------------------------

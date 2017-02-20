@@ -46,10 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="30DaysOfCode\Day08_DictionariesAndMaps.cs" />
     <Compile Include="30DaysOfCode\Day6_LetsReview.cs" />
     <Compile Include="30DaysOfCode\Day7_Arrays.cs" />
     <Compile Include="30DaysOfCode\Loop.cs" />
-    <Compile Include="DynamicArray.cs" />
+    <Compile Include="DataStructures\Arrays\DynamicArray.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjectEuler\2_EvenFibonacciNumbers.cs" />
