@@ -42,7 +42,7 @@ namespace HackerRank.DataStructures.Arrays
                 else if (queryNumber == 2)
                 {
                     var result = (x ^ lastAns) % seq_count;
-                    var index = y % seq_count;
+                    var index = y % wholeArray[result].Count;
 
                     lastAns = wholeArray[result][index];
 

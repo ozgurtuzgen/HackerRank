@@ -47,13 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="30DaysOfCode\Day08_DictionariesAndMaps.cs" />
+    <Compile Include="30DaysOfCode\Day09_Recursion.cs" />
     <Compile Include="30DaysOfCode\Day6_LetsReview.cs" />
     <Compile Include="30DaysOfCode\Day7_Arrays.cs" />
     <Compile Include="30DaysOfCode\Loop.cs" />
     <Compile Include="DataStructures\Arrays\DynamicArray.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProjectEuler\2_EvenFibonacciNumbers.cs" />
+    <Compile Include="ProjectEuler\002_EvenFibonacciNumbers.cs" />
+    <Compile Include="ProjectEuler\003_LargestPrimeFactor.cs" />
     <Compile Include="ProjectEuler\ProjectEuler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

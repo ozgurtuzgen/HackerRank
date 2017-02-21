@@ -9,7 +9,9 @@ class Solution
 
     static void Main(String[] args)
     {
-        HackerRank._30DaysOfCode.Day08_DictionariesAndMaps.Calculate();
+        //HackerRank._30DaysOfCode.Day09_Recursion.Calculate();
+        //HackerRank.ProjectEuler._3_LargestPrimeFactor.Calculate();
+        HackerRank.DataStructures.Arrays.DynamicArray.Calculate();
 
         Console.ReadLine();
         //--------------------------DAY3------------------------------------------
