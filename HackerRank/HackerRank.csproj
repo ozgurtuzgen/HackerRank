@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="30DaysOfCode\Day08_DictionariesAndMaps.cs" />
     <Compile Include="30DaysOfCode\Day09_Recursion.cs" />
+    <Compile Include="30DaysOfCode\Day10_BinaryNumbers.cs" />
     <Compile Include="30DaysOfCode\Day6_LetsReview.cs" />
     <Compile Include="30DaysOfCode\Day7_Arrays.cs" />
     <Compile Include="30DaysOfCode\Loop.cs" />

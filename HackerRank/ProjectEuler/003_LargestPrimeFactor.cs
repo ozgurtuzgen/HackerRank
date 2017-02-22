@@ -12,29 +12,53 @@ namespace HackerRank.ProjectEuler
         public static void Calculate()
         {
             int t = Convert.ToInt32(Console.ReadLine());
-            List<long> primeList = new List<long>();
+            List<long> factorList = new List<long>();
             for (int a0 = 0; a0 < t; a0++)
             {
-                long greatestPrime = 0;
+
                 long n = Convert.ToInt64(Console.ReadLine());               
+                
+                Console.WriteLine(FindMaxPrimeFactor(n));
+            }
+        }
 
-                for (Int64 k=2; k <= n/2; k++)
+        public static long FindMaxPrimeFactor(long n)
+        {
+            long remainder = 0;
+            long maxPrimeFactor = 1;
+            var factorList = new List<long>();
+            for (Int64 k = 2; k <= n; k++)
+            {
+                var tempN = n;
+                while (remainder == 0)
                 {
-                    var remainder = n % k;
-
-                    if (remainder==0)
+                    tempN = Math.DivRem(tempN, k, out remainder);
+                    if (remainder == 0)
                     {
-                        greatestPrime = k;
+                        factorList.Add(k);
+                        n = tempN;
                     }
                 }
-                
-                if (greatestPrime == 0)
-                {
-                    greatestPrime = n;
-                }
-
-                Console.WriteLine(greatestPrime);
+                remainder = 0;
             }
+
+            if (factorList.Count == 0)
+            {
+                maxPrimeFactor = n;
+            }
+            else if (factorList.Count == 1)
+            {
+                maxPrimeFactor = factorList[0];
+            }
+            else
+            {
+                for (int i = 1; i < factorList.Count; i++)
+                {
+                    maxPrimeFactor = maxPrimeFactor * factorList[i];
+                }
+            }
+
+            return maxPrimeFactor;
         }
     }
 }
