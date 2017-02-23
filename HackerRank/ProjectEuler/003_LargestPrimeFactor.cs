@@ -27,6 +27,7 @@ namespace HackerRank.ProjectEuler
             long remainder = 0;
             long maxPrimeFactor = 1;
             var factorList = new List<long>();
+            long lastPrimeFactor = 1;
             for (Int64 k = 2; k <= n; k++)
             {
                 var tempN = n;                
@@ -35,14 +36,15 @@ namespace HackerRank.ProjectEuler
                     tempN = Math.DivRem(tempN, k, out remainder);
                     if (remainder == 0)
                     {
-                        if (factorList.Count==0 || factorList.Last() != k)
+                        if (lastPrimeFactor != k)
                         {
+                            lastPrimeFactor = k;
                             factorList.Add(k);
                         }
                         n = tempN;
                     }
                 }
-                remainder = 0;
+                remainder = 0;                
             }
 
             if (factorList.Count == 0)
@@ -51,7 +53,7 @@ namespace HackerRank.ProjectEuler
             }
             else
             {
-                maxPrimeFactor = factorList.Last();
+                maxPrimeFactor = lastPrimeFactor;
             }            
 
             return maxPrimeFactor;
