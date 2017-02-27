@@ -32,7 +32,7 @@ namespace HackerRank._30DaysOfCode
                     Console.WriteLine(query + "=" + result);
                     
                 }
-                catch (KeyNotFoundException ke)
+                catch (KeyNotFoundException)
                 {
                     Console.WriteLine("Not found");
                 }

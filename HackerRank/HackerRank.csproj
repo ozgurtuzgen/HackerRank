@@ -52,6 +52,8 @@
     <Compile Include="30DaysOfCode\Day11_2DArrays.cs" />
     <Compile Include="30DaysOfCode\Day12_Inheritance.cs" />
     <Compile Include="30DaysOfCode\Day13_AbstractClasses.cs" />
+    <Compile Include="30DaysOfCode\Day14_Scope.cs" />
+    <Compile Include="30DaysOfCode\Day15_LinkedList.cs" />
     <Compile Include="30DaysOfCode\Day6_LetsReview.cs" />
     <Compile Include="30DaysOfCode\Day7_Arrays.cs" />
     <Compile Include="30DaysOfCode\Loop.cs" />

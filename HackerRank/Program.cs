@@ -9,9 +9,9 @@ class Solution
 
     static void Main(String[] args)
     {
-        //HackerRank._30DaysOfCode.Day11_2DArrays.Calculate();
+        HackerRank._30DaysOfCode.Day15_LinkedList.Calculate();
         //HackerRank.ProjectEuler._3_LargestPrimeFactor.Calculate();
-        HackerRank.DataStructures.Arrays.LeftRotation.Calculate();
+        //HackerRank.DataStructures.Arrays.LeftRotation.Calculate();
 
         Console.ReadLine();
         //--------------------------DAY3------------------------------------------
