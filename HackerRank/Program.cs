@@ -9,7 +9,7 @@ class Solution
 
     static void Main(String[] args)
     {
-        HackerRank._30DaysOfCode.Day15_LinkedList.Calculate();
+        HackerRank._30DaysOfCode.Day15_LinkedList.CalculateDelete();
         //HackerRank.ProjectEuler._3_LargestPrimeFactor.Calculate();
         //HackerRank.DataStructures.Arrays.LeftRotation.Calculate();
 

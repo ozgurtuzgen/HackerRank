@@ -21,6 +21,87 @@ namespace HackerRank._30DaysOfCode
             display(head);
         }
 
+        public static void CalculateInsertNth()
+        {
+            Node head = null;
+            int T = Int32.Parse(Console.ReadLine());
+            while (T-- > 0)
+            {
+                int[] a = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();                
+                head = InsertNth(head, a[0],a[1]);
+            }
+            display(head);
+        }
+
+        public static void CalculateDelete()
+        {
+            Node head = null;
+            int T = Int32.Parse(Console.ReadLine());
+            while (T-- > 0)
+            {
+                int[] a = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+                head = InsertNth(head, a[0], a[1]);
+            }
+            display(head);
+            int position = Int32.Parse(Console.ReadLine());
+
+            Delete(head, position);
+        }
+
+        public static Node InsertNth(Node head, int data, int position)
+        {
+            // This is a "method-only" submission. 
+            // You only need to complete this method. 
+            Node newNode = new Node(data);
+            //newNode.data = data;
+
+            if (position == 0 )
+            {
+                if (head == null)
+                {
+                    head = newNode;
+                }
+                else
+                {
+                    newNode.next = head;
+                }
+
+                return newNode;
+            }
+
+            Node tempNode = head;
+
+            for (int i = 0; i <= position; i++)
+            {
+
+                if (i == position-1)
+                {
+                    if (tempNode.next == null)
+                    {
+                        //add to tail
+                        tempNode.next = newNode;
+                        return head;
+                    }
+                    else
+                    {
+                        //insert to the middle
+                        newNode.next = tempNode.next;
+                        tempNode.next = newNode;
+                        return head;
+                    }
+
+                    
+                }
+                else
+                {
+                    tempNode = tempNode.next;
+                    continue;
+                }
+            }
+
+            return head;
+        }
+
         public static void display(Node head)
         {
             Node start = head;
@@ -67,6 +148,32 @@ namespace HackerRank._30DaysOfCode
             //}
 
             //return head;
+        }
+
+        public static Node Delete(Node head, int position)
+        {
+            Node tempNode = head;
+
+            for (int i = 0; i <= position-1; i++)
+            {
+                if (i == position - 1)
+                {
+                    if (tempNode.next.next == null)
+                    {
+                        tempNode.next = null;
+                        return head;
+                    }
+                    else
+                    {
+                        tempNode.next = tempNode.next.next;
+                        return head;
+                    }
+                }
+                
+                tempNode = tempNode.next;
+            }
+
+            return head;
         }
 
     }
