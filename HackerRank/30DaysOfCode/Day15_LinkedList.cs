@@ -46,6 +46,7 @@ namespace HackerRank._30DaysOfCode
             int position = Int32.Parse(Console.ReadLine());
 
             Delete(head, position);
+            display(head);
         }
 
         public static Node InsertNth(Node head, int data, int position)
@@ -152,28 +153,52 @@ namespace HackerRank._30DaysOfCode
 
         public static Node Delete(Node head, int position)
         {
-            Node tempNode = head;
-
-            for (int i = 0; i <= position-1; i++)
+            //empty list
+            if (head == null)
             {
-                if (i == position - 1)
+                return null;
+            }
+
+            //delete first node
+            if (position == 0 )
+            {
+                if (head.next == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    return head.next;
+                }
+            }
+
+            Node tempNode = head;
+            int index = 0;
+
+            while(tempNode.next != null)
+            {
+                index++;
+
+                if (position == index)
                 {
                     if (tempNode.next.next == null)
                     {
                         tempNode.next = null;
-                        return head;
                     }
                     else
                     {
                         tempNode.next = tempNode.next.next;
-                        return head;
                     }
+
+                    return head;
                 }
-                
-                tempNode = tempNode.next;
+                else
+                {
+                    tempNode = tempNode.next;
+                }
             }
 
-            return head;
+            return head;           
         }
 
     }

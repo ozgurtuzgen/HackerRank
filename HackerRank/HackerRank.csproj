@@ -55,6 +55,8 @@
     <Compile Include="30DaysOfCode\Day14_Scope.cs" />
     <Compile Include="30DaysOfCode\Day15_LinkedList.cs" />
     <Compile Include="30DaysOfCode\Day16_Exceptions_StringToInteger.cs" />
+    <Compile Include="30DaysOfCode\Day17_MoreExceptions.cs" />
+    <Compile Include="30DaysOfCode\Day18_QueuesAndStacks.cs" />
     <Compile Include="30DaysOfCode\Day6_LetsReview.cs" />
     <Compile Include="30DaysOfCode\Day7_Arrays.cs" />
     <Compile Include="30DaysOfCode\Loop.cs" />
