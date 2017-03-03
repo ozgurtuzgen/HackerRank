@@ -8,7 +8,7 @@ namespace HackerRank._30DaysOfCode
 {
     public static class Day17_MoreExceptions
     {
-        static void Main(String[] args)
+        static void Calculate()
         {
             Calculator myCalculator = new Calculator();
             int T = Int32.Parse(Console.ReadLine());
