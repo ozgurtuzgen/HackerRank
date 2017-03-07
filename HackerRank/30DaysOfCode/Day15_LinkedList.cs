@@ -86,6 +86,15 @@ namespace HackerRank._30DaysOfCode
             GetNode(nodea, 2);
         }
 
+        public static void RemoveDuplicateTest()
+        {
+            Node nodea = new Node(1);
+            nodea.next = new Node(1);
+            nodea.next.next = new Node(1);
+
+            RemoveDuplicates(nodea);
+        }
+
         public static Node InsertNth(Node head, int data, int position)
         {
             // This is a "method-only" submission. 
@@ -367,6 +376,33 @@ namespace HackerRank._30DaysOfCode
             }
 
             return -1;
+        }
+
+        public static Node RemoveDuplicates(Node head)
+        {
+            Node tempNode = head;
+
+            while (tempNode != null && tempNode.next != null)
+            {
+               
+                if (tempNode.data == tempNode.next.data)
+                {
+                    if (tempNode.next.next != null)
+                    {
+                        tempNode.next = tempNode.next.next;
+                    }
+                    else
+                    {
+                        tempNode.next = null;
+                    }
+                }
+                else
+                {
+                    tempNode = tempNode.next;
+                }
+            }
+
+            return head;
         }
 
     }
