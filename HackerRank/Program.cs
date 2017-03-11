@@ -9,7 +9,7 @@ class Solution
 
     static void Main(String[] args)
     {
-        HackerRank._30DaysOfCode.BST.Day23_BSTLevel_OrderTraversal.Calculate();
+        HackerRank._30DaysOfCode.Day27_Testing.Calculate();
         //HackerRank.ProjectEuler._3_LargestPrimeFactor.Calculate();
         //HackerRank.DataStructures.Arrays.LeftRotation.Calculate();
 

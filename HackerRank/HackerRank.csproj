@@ -62,11 +62,15 @@
     <Compile Include="30DaysOfCode\Day21_Generics.cs" />
     <Compile Include="30DaysOfCode\Day22_BinarySearchTrees.cs" />
     <Compile Include="30DaysOfCode\Day23_BSTLevel-OrderTraversal.cs" />
+    <Compile Include="30DaysOfCode\Day25_RunningTimeComplexity.cs" />
+    <Compile Include="30DaysOfCode\Day26_NestedLogic.cs" />
+    <Compile Include="30DaysOfCode\Day27_Testing.cs" />
     <Compile Include="30DaysOfCode\Day6_LetsReview.cs" />
     <Compile Include="30DaysOfCode\Day7_Arrays.cs" />
     <Compile Include="30DaysOfCode\Loop.cs" />
     <Compile Include="DataStructures\Arrays\DynamicArray.cs" />
     <Compile Include="DataStructures\Arrays\LeftRotation.cs" />
+    <Compile Include="DataStructures\LinkedList\InsertingNodeIntoSortedDoublyLinkedList.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjectEuler\002_EvenFibonacciNumbers.cs" />

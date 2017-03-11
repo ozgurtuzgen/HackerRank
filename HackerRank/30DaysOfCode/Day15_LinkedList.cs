@@ -95,6 +95,21 @@ namespace HackerRank._30DaysOfCode
             RemoveDuplicates(nodea);
         }
 
+        public static void FindMergeNodeTest()
+        {
+            Node nodea = new Node(1);
+            nodea.next = new Node(5);
+            nodea.next.next = new Node(6);
+            nodea.next.next.next = new Node(7);
+            nodea.next.next.next.next = new Node(8);
+
+            Node nodeb = new Node(2);
+            nodeb.next = new Node(7);
+            nodeb.next.next = new Node(8);
+
+            FindMergeNode(nodea, nodeb);
+        }
+
         public static Node InsertNth(Node head, int data, int position)
         {
             // This is a "method-only" submission. 
@@ -403,6 +418,37 @@ namespace HackerRank._30DaysOfCode
             }
 
             return head;
+        }
+
+        public static int FindMergeNode(Node headA, Node headB)
+        {
+            Node currentA = headA;
+            Node currentB = headB;
+
+            //Do till the two nodes are the same
+            while (currentA != currentB)
+            {
+                //If you reached the end of one list start at the beginning of the other one
+                //currentA
+                if (currentA.next == null)
+                {
+                    currentA = headB;
+                }
+                else
+                {
+                    currentA = currentA.next;
+                }
+                //currentB
+                if (currentB.next == null)
+                {
+                    currentB = headA;
+                }
+                else
+                {
+                    currentB = currentB.next;
+                }
+            }
+            return currentB.data;
         }
 
     }
